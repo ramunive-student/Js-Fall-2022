@@ -39,19 +39,19 @@ console.log(`\nsentence: ${sentence3}`);
 let pattern = 'HeaLTh';
 let sentence3_lowerCase = sentence3.toLowerCase();
 let pattern_lowerCase = pattern.toLowerCase();
-let startsWith_pattern_ignoreCase = sentence3_lowerCase.startsWith(pattern_lowerCase);
-console.log(`Does the sentence start with '${pattern}' (ignore cases): ${startsWith_pattern_ignoreCase}`);
+let doesSentenceStartWithPatter_ignoreCase = sentence3_lowerCase.startsWith(pattern_lowerCase);
+console.log(`Does the sentence start with '${pattern}' (ignore cases): ${doesSentenceStartWithPatter_ignoreCase}`);
 
 
 // Does sentence-3 start with 'HeaLTh' (consider cases)
-let startsWith_pattern = sentence3.startsWith(pattern) ? `When considering cases, the sentence starts with ${pattern}` : `When considering cases, the sentence does NOT start with ${pattern}`;
-console.log(startsWith_pattern);
+let doesSentenceStartWithPattern = sentence3.startsWith(pattern) ? `When considering cases, the sentence starts with ${pattern}` : `When considering cases, the sentence does NOT start with ${pattern}`;
+console.log(doesSentenceStartWithPattern);
 
 // 3. Does sentence-3 contain 'Body' (ignore cases)
 pattern = 'Body';
 pattern_lowerCase = pattern.toLowerCase();
-let contains_pattern_ignoreCase = sentence3_lowerCase.includes(pattern_lowerCase);
-console.log(`Does the sentence contain '${pattern}' (ignore cases): ${contains_pattern_ignoreCase}`);
+let doesSentenceContainPattern_ignoreCase = sentence3_lowerCase.includes(pattern_lowerCase);
+console.log(`Does the sentence contain '${pattern}' (ignore cases): ${doesSentenceContainPattern_ignoreCase}`);
 
 // 4. index of 'BoDy' in sentence3  (ignore cases)
 
@@ -68,8 +68,8 @@ console.log(`The last character in the sentence -> ${lastCharacter}`);
 // 6. word 'BoDy' is present only once. (true or false)
 let pattern_lastIndex = sentence3_lowerCase.lastIndexOf(pattern_lowerCase);
 console.log(`last index: ${pattern_lastIndex}, first index: ${pattern_firstIndex}`);
-let pattern_occursOnce = pattern_firstIndex === pattern_lastIndex;
-console.log(`The word '${pattern}' is present only once (ignore cases) -> ${pattern_occursOnce}`);
+let isPatternPresentMoreThanOnce = pattern_firstIndex === pattern_lastIndex;
+console.log(`The word '${pattern}' is present only once (ignore cases) -> ${isPatternPresentMoreThanOnce}`);
 
 
 console.log('\n');
