@@ -27,7 +27,7 @@ console.log('\n');
 
 //---------------------------------------------------------------
 
-const sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
+ const sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
 
 
 // 1. The length of sentence-3
@@ -66,9 +66,11 @@ let lastCharacter = sentence3.charAt(sentence3.length-1);
 console.log(`The last character in the sentence -> ${lastCharacter}`);
 
 // 6. word 'BoDy' is present only once. (true or false)
+
+
 let pattern_lastIndex = sentence3_lowerCase.lastIndexOf(pattern_lowerCase);
 console.log(`last index: ${pattern_lastIndex}, first index: ${pattern_firstIndex}`);
-let isPatternPresentMoreThanOnce = pattern_firstIndex === pattern_lastIndex;
+let isPatternPresentMoreThanOnce = pattern_firstIndex === pattern_lastIndex && pattern_firstIndex >= 0;
 console.log(`The word '${pattern}' is present only once (ignore cases) -> ${isPatternPresentMoreThanOnce}`);
 
 
