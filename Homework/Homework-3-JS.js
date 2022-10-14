@@ -71,7 +71,9 @@
  //fourth word
  word = sentence4_separateWords[3];
  word = word.charAt(0).toUpperCase() + word.substring(1);
- sentence4_Titlecase += word;
+ sentence4_Titlecase += word + " ";  
+ 
+ sentence4_Titlecase.trim();
 
  console.log(`sentence4_Titlecase -> ${sentence4_Titlecase}`);   // sentence4_Titlecase -> Have A Great Day
  console.log('\n');
