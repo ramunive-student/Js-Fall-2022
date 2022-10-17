@@ -42,6 +42,11 @@ if(indexOfLookFor_TC === 2){
     let originalValueAtIndex2 = sports[2];
     sports[2] = lookFor_TC;
     console.log(`Original value at index-2: ${originalValueAtIndex2}`);
+    /**
+     * alternative solution:
+     * let removedValue = sports.splice(2, 1, 'BASKETBALL');
+     * console.log(`Removed value -> ${removedValue}`);
+     */
 }else { 
     // index must be -1 here but there is no value at index 2 to be replaced
     // the requirements say to place the value at index-2, but would need to clarify how this case is to be handled
@@ -181,6 +186,27 @@ console.log(`Current array: ${sports}\n\n`);
  }
 
  console.log('\n\n');
+
+ /**
+  * Alternative solution:
+  * 
+  * if (studentScore > maxCore || studentScore < 0){
+  *    console.log('Invalid student score');
+  * else{ // valid conditions
+  *   let percentage = (studentScore/maxScore)*100;
+  * 
+  *   if (percentage >= 91.00){
+  *      grade = 'A';}
+  *   } else if (percentage >= 81.00){
+  *     grade = 'B'; 
+  * 
+  * 
+  *      etc
+  * }
+  *   Then inside the else block (valid conditions) can put the print statement for "Your percentage is XX.yy and your Grade is Z"
+  * 
+  * }
+  */
 
 
 /**----------------------------------------------------------------------------------------------------------------------------
