@@ -71,7 +71,7 @@ function longestStringsInArray (originalArr){
 
     //make a list of the strings with the longest length
     for(let str of originalArr){
-        if (str.length >= longest){
+        if (str.length === longest){
             longestStrings.push(str);
         }
     }
